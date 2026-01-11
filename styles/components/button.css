@@ -1,0 +1,29 @@
+.see-more-btn {
+  width: 7.3125rem;
+  height: 2.5rem;
+  padding: 0.625rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: var(--theme-color);
+  border-radius: 1.25rem;
+  border: none;
+}
+
+.listing-select-btn {
+  width: 0.6875rem;
+  height: 0.6875rem;
+  border-radius: 50%;
+  background-color: #d8d8d8;
+  border: none;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin-top: 0.625rem;
+}
+
+.listing-select-btn.active {
+  border: 0.125rem solid var(--theme-color);
+  background-color: white;
+}

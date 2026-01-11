@@ -1,0 +1,17 @@
+@import url("base/variables.css");
+@import url("base/base.css");
+
+@import url("components/button.css");
+@import url("components/card.css");
+@import url("components/search.css");
+@import url("components/tag.css");
+
+@import url("sections/header.css");
+@import url("sections/footer.css");
+@import url("sections/top-section.css");
+@import url("sections/about.css");
+@import url("sections/events.css");
+@import url("sections/explore.css");
+@import url("sections/featured.css");
+@import url("sections/journey.css");
+@import url("sections/map.css");

@@ -1,0 +1,66 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+
+.header {
+  width: 21rem;
+  margin: 0 auto;
+  margin-top: 2.25rem;
+  margin-bottom: 1.5625rem;
+  text-align: left;
+}
+
+.search-container {
+  margin: 30px;
+}
+
+.search-section-elements {
+  width: 100%;
+  max-width: 90rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.house-img {
+  width: 100%;
+  margin-top: 2.25rem;
+  max-width: 44.375rem;
+}
+
+@media (min-width: 53.125rem) {
+  .hero h1 {
+    font-size: 2.7rem;
+  }
+
+  .header {
+    width: 35.375rem;
+    height: 7.625rem;
+  }
+}
+@media (min-width: 65.625rem) {
+  .search-section-elements {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .house-img {
+    padding-right: 0.75rem;
+  }
+
+  .hero h1 {
+    font-size: 3.125rem;
+  }
+
+  .header {
+    width: 35.375rem;
+    height: 7.625rem;
+  }
+}

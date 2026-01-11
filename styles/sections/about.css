@@ -1,0 +1,93 @@
+.about-hero {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2.5rem;
+}
+
+.about {
+  padding-left: 1.8rem;
+  padding-bottom: 1.5rem;
+  padding-right: 1.8rem;
+}
+
+.reverifi {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.about p {
+  padding-bottom: 0.875rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--text-grey);
+  opacity: 49.95%;
+}
+
+.reverifi h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.reverifi #plus {
+  color: var(--theme-color);
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0.3125rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.service img {
+  width: 2rem;
+}
+
+.service p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text-grey);
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  max-width: 87.5rem;
+}
+
+@media (min-width: 53.125rem) {
+  .about-container {
+    flex-direction: row;
+  }
+
+  .service p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--text-grey);
+  }
+  .about {
+    padding: 1.875rem;
+    padding-right: 0;
+    width: 50%;
+  }
+}
+
+@media (min-width: 65.625rem) {
+  .about p {
+    padding-bottom: 0.875rem;
+  }
+}

@@ -1,0 +1,91 @@
+.mobile-nav {
+  background-color: var(--text-grey);
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  position: relative;
+}
+.nav-logo-mobile {
+  width: 6.25rem;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.desktop-nav {
+  background-color: var(--text-grey);
+  height: 5rem;
+  display: none;
+  justify-content: center;
+}
+
+.desktop-nav-elements {
+  width: 100%;
+  max-width: 90rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  position: relative;
+}
+
+.nav-logo-desktop {
+  width: 7.5rem;
+  height: auto;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  width: 24.0625rem;
+  justify-content: space-between;
+  padding-left: 1.4375rem;
+}
+
+.nav-right {
+  right: 3rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+.desktop-nav a {
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.register-btn {
+  display: inline-block;
+  width: 7.3125rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  background-color: var(--theme-color);
+  margin-left: 1.5rem;
+  border-radius: 1.25rem;
+  color: white;
+}
+
+.menu-button {
+  width: 1.5rem;
+  height: auto;
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+@media (min-width: 53.125rem) {
+  .desktop-nav {
+    display: flex;
+  }
+  .mobile-nav {
+    display: none;
+  }
+}

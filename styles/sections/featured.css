@@ -1,0 +1,142 @@
+.featured-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.featured-header {
+  justify-content: center;
+}
+
+.featured-header h2 {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row h2 {
+  font-size: 1.125rem;
+}
+
+.distance {
+  width: 4.1875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.distance p {
+  font-size: 0.625rem;
+  color: var(--text-grey);
+  opacity: 49.63%;
+}
+
+.distance img {
+  height: 0.625rem;
+  width: auto;
+}
+
+.listing-details {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: left;
+  padding: 1.3019rem;
+  width: 100%;
+}
+
+.location {
+  font-size: 0.875rem;
+  color: var(--text-grey);
+  opacity: 50.5%;
+}
+
+.amenities {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+.amenities img {
+  width: 1rem;
+  height: 0.6875rem;
+  margin: 0;
+  padding: 0;
+  margin-right: 0.5rem;
+}
+
+.amenities p {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text-light-grey);
+  margin-right: 0.2rem;
+}
+
+.featured-listings-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  justify-items: center;
+  padding-top: 2rem;
+}
+
+.divider {
+  border: #d8d8d8 0.0625rem;
+  height: 0.0625rem;
+  background-color: #d8d8d8;
+  width: 100%;
+}
+
+.svg-icon {
+  cursor: pointer;
+}
+
+.svg-bg {
+  transition: fill 0.1s ease;
+}
+
+.svg-shape {
+  transition: stroke 0.1s ease;
+}
+
+.svg-icon:hover .svg-bg {
+  fill: var(--theme-color);
+}
+
+.svg-icon:hover .svg-shape {
+  stroke: white;
+}
+
+.listing-price {
+  display: flex;
+  align-items: center;
+  padding: 0.625rem;
+  justify-content: space-between;
+}
+
+.select-listing {
+  display: flex;
+  align-items: center;
+  width: 8.5625rem;
+  justify-content: space-between;
+}
+@media (min-width: 53.125rem) {
+  .featured-listings-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
+  }
+}
+@media (min-width: 65.625rem) {
+  .featured-listings-container {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: stretch;
+  }
+}

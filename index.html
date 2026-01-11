@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <button
+          class="menu-button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          <img src="images/menu.svg" alt="menu" />
+        </button>
+        <a class="nav-logo-mobile">
+          <img
+            src="images/download-logo-reverifi-green.svg"
+            alt="reverifi logo"
+          />
+        </a>
+      </nav>
+      <nav class="desktop-nav" aria-label="Desktop Navigation">
+        <div class="desktop-nav-elements">
+          <a class="nav-logo-desktop">
+            <img
+              src="images/download-logo-reverifi-green.svg"
+              alt="reverifi logo"
+            />
+          </a>
+          <ul class="nav-left">
+            <li><a>How we Work</a></li>
+            <li><a>Find an Agent</a></li>
+            <li><a>Knowledge Center</a></li>
+          </ul>
+          <div class="nav-right">
+            <a>Sign In</a>
+            <a class="register-btn">Join Now</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Search bar and image -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="search-section-elements">
+          <div class="search-container">
+            <div class="header">
+              <h1 id="hero-heading">
+                Search our listings for your next purchase
+              </h1>
+            </div>
+            <div class="search-bar-container">
+              <label for="search-input" class="visually-hidden"
+                >Search for a property</label
+              >
+              <img
+                src="images/location-pin.svg"
+                class="location-icon"
+                aria-hidden="true"
+              />
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Enter City, neighborhood, ZIP, or address"
+                class="search-input"
+              />
+              <button class="search-button" aria-label="Search">
+                <img src="images/search-icon.svg" alt="search" />
+              </button>
+            </div>
+          </div>
+          <img
+            src="images/house.svg"
+            class="house-img"
+            alt="Drawing of a house"
+          />
+        </div>
+      </section>
+
+      <!-- featured listings -->
+      <section class="featured-hero" aria-labelledby="featured-heading">
+        <div class="featured-header">
+          <h2 id="featured-heading">Our Featured Listing</h2>
+        </div>
+        <div class="featured-listings-container">
+          <div class="featured-listing">
+            <div class="tags">
+              <div class="tag" id="orange">
+                <p>New</p>
+              </div>
+              <img
+                src="images/pexels-pixabay-220453.svg"
+                alt="Listing owner"
+                class="featured-listing-owner"
+              />
+            </div>
+            <img
+              src="images/pexels-curtis-adams-5178068.svg"
+              alt="An apartment"
+              class="featured-listing-image"
+            />
+            <div class="listing-details">
+              <div class="row">
+                <h2>Apartment#1</h2>
+                <div class="distance">
+                  <img src="images/location-pin.svg" alt="" />
+                  <p>1.1km away</p>
+                </div>
+              </div>
+              <p class="location">Bronx, NY 10459</p>
+              <div class="amenities">
+                <p>2</p>
+                <img src="images/bedroom.svg" alt="bedrooms" />
+                <img src="images/wifi.svg" alt="wifi" />
+                <p>1</p>
+                <img src="images/bathtub.svg" alt="bathrooms" />
+                <img src="images/air-conditioner.svg" alt="Air conditioning" />
+                <img src="images/bench.svg" alt="bench" />
+              </div>
+            </div>
+            <hr class="divider" />
+            <div class="listing-price">
+              <p class="price">$30,000</p>
+              <div class="interaction-container">
+                <button class="svg-icon" aria-label="Save this listing">
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_d_1_847)">
+                      <circle
+                        class="svg-bg"
+                        cx="18"
+                        cy="17"
+                        r="12"
+                        fill="#F4F4F4"
+                      />
+                    </g>
+                    <path
+                      class="svg-shape"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M21.3369 11C19.8546 11 18.5761 11.8849 17.9997 13.1536C17.4239 11.8849 16.1451 11 14.6635 11C12.643 11 11 12.6437 11 14.6637C11 15.0899 11.0732 15.4985 11.2078 15.8794C11.361 16.313 11.5932 16.709 11.8876 17.0506C12.0131 17.1967 12.1495 17.3325 12.2967 17.4571L17.8843 23.0074C17.9187 23.0418 17.9635 23.059 18.0087 23.059C18.0543 23.059 18.0994 23.0418 18.1341 23.0074L23.9292 17.2498C24.3043 16.8726 24.5989 16.4157 24.7833 15.9058C24.9234 15.5179 25 15.0995 25 14.6637C25 12.6437 23.3565 11 21.3369 11Z"
+                      stroke="#979797"
+                    />
+                  </svg>
+                </button>
+                <button class="svg-icon" aria-label="Share this listing">
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_d_1_850)">
+                      <circle
+                        class="svg-bg"
+                        cx="18"
+                        cy="17"
+                        r="12"
+                        fill="#F4F4F4"
+                      />
+                    </g>
+                    <path
+                      class="svg-shape"
+                      opacity="0.501674"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M19.5789 13.2105C19.5789 11.9953 20.5742 11 21.7895 11C23.0047 11 24 11.9953 24 13.2105C24 14.4258 23.0047 15.4211 21.7895 15.4211C21.1006 15.4211 20.5076 15.0819 20.1014 14.5835L16.315 16.4776C16.3252 16.5184 16.3366 16.5588 16.348 16.5991L16.348 16.5991L16.348 16.5991L16.348 16.5991C16.3846 16.7291 16.4211 16.8589 16.4211 17C16.4211 17.1411 16.3846 17.2709 16.348 17.4009L16.348 17.4009L16.348 17.4009L16.348 17.4009C16.3366 17.4412 16.3252 17.4816 16.315 17.5224L20.1014 19.4165C20.5076 18.9181 21.1006 18.5789 21.7895 18.5789C23.0047 18.5789 24 19.5742 24 20.7895C24 22.0047 23.0047 23 21.7895 23C20.5742 23 19.5789 22.0047 19.5789 20.7895C19.5789 20.6483 19.6154 20.5186 19.652 20.3886L19.652 20.3886C19.6634 20.3482 19.6748 20.3078 19.685 20.2671L15.8986 18.3729C15.4924 18.8714 14.8994 19.2105 14.2105 19.2105C12.9953 19.2105 12 18.2152 12 17C12 15.7848 12.9953 14.7895 14.2105 14.7895C14.8994 14.7895 15.4924 15.1286 15.8986 15.6271L19.685 13.7329C19.6748 13.6922 19.6634 13.6518 19.652 13.6114L19.652 13.6114L19.652 13.6114L19.652 13.6114C19.6154 13.4814 19.5789 13.3517 19.5789 13.2105ZM23.0526 13.2105C23.0526 12.5073 22.4927 11.9474 21.7895 11.9474C21.0862 11.9474 20.5263 12.5073 20.5263 13.2105C20.5263 13.9138 21.0862 14.4737 21.7895 14.4737C22.4927 14.4737 23.0526 13.9138 23.0526 13.2105ZM14.2105 15.7368C14.9138 15.7368 15.4737 16.2968 15.4737 17C15.4737 17.7032 14.9138 18.2632 14.2105 18.2632C13.5073 18.2632 12.9474 17.7032 12.9474 17C12.9474 16.2968 13.5073 15.7368 14.2105 15.7368ZM23.0526 20.7895C23.0526 20.0862 22.4927 19.5263 21.7895 19.5263C21.0862 19.5263 20.5263 20.0862 20.5263 20.7895C20.5263 21.4927 21.0862 22.0526 21.7895 22.0526C22.4927 22.0526 23.0526 21.4927 23.0526 20.7895Z"
+                      fill="#222222"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="featured-listing">
+            <div class="tags">
+              <div class="tag">
+                <p>Rent</p>
+              </div>
+              <img
+                src="images/pexels-pixabay-220453.svg"
+                alt="Listing owner"
+                class="featured-listing-owner"
+              />
+            </div>
+            <img
+              src="images/pexels-pixabay-259962.svg"
+              alt="An apartment"
+              class="featured-listing-image"
+            />
+            <div class="listing-details">
+              <div class="row">
+                <h2>Apartment#2</h2>
+                <div class="distance">
+                  <img src="images/location-pin.svg" alt="" />
+                  <p>1.1km away</p>
+                </div>
+              </div>
+              <p class="location">Bronx, NY 10459</p>
+              <div class="amenities">
+                <p>2</p>
+                <img src="images/bedroom.svg" alt="bedrooms" />
+                <img src="images/wifi.svg" alt="wifi" />
+                <p>1</p>
+                <img src="images/bathtub.svg" alt="bathrooms" />
+                <img src="images/air-conditioner.svg" alt="Air conditioning" />
+                <img src="images/bench.svg" alt="bench" />
+              </div>
+            </div>
+            <hr class="divider" />
+            <div class="listing-price">
+              <p class="price">$30,000</p>
+              <div class="interaction-container">
+                <button class="svg-icon" aria-label="Save this listing">
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_d_1_847)">
+                      <circle
+                        class="svg-bg"
+                        cx="18"
+                        cy="17"
+                        r="12"
+                        fill="#F4F4F4"
+                      />
+                    </g>
+                    <path
+                      class="svg-shape"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M21.3369 11C19.8546 11 18.5761 11.8849 17.9997 13.1536C17.4239 11.8849 16.1451 11 14.6635 11C12.643 11 11 12.6437 11 14.6637C11 15.0899 11.0732 15.4985 11.2078 15.8794C11.361 16.313 11.5932 16.709 11.8876 17.0506C12.0131 17.1967 12.1495 17.3325 12.2967 17.4571L17.8843 23.0074C17.9187 23.0418 17.9635 23.059 18.0087 23.059C18.0543 23.059 18.0994 23.0418 18.1341 23.0074L23.9292 17.2498C24.3043 16.8726 24.5989 16.4157 24.7833 15.9058C24.9234 15.5179 25 15.0995 25 14.6637C25 12.6437 23.3565 11 21.3369 11Z"
+                      stroke="#979797"
+                    />
+                  </svg>
+                </button>
+                <button class="svg-icon" aria-label="Share this listing">
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_d_1_850)">
+                      <circle
+                        class="svg-bg"
+                        cx="18"
+                        cy="17"
+                        r="12"
+                        fill="#F4F4F4"
+                      />
+                    </g>
+                    <path
+                      class="svg-shape"
+                      opacity="0.501674"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M19.5789 13.2105C19.5789 11.9953 20.5742 11 21.7895 11C23.0047 11 24 11.9953 24 13.2105C24 14.4258 23.0047 15.4211 21.7895 15.4211C21.1006 15.4211 20.5076 15.0819 20.1014 14.5835L16.315 16.4776C16.3252 16.5184 16.3366 16.5588 16.348 16.5991L16.348 16.5991L16.348 16.5991L16.348 16.5991C16.3846 16.7291 16.4211 16.8589 16.4211 17C16.4211 17.1411 16.3846 17.2709 16.348 17.4009L16.348 17.4009L16.348 17.4009L16.348 17.4009C16.3366 17.4412 16.3252 17.4816 16.315 17.5224L20.1014 19.4165C20.5076 18.9181 21.1006 18.5789 21.7895 18.5789C23.0047 18.5789 24 19.5742 24 20.7895C24 22.0047 23.0047 23 21.7895 23C20.5742 23 19.5789 22.0047 19.5789 20.7895C19.5789 20.6483 19.6154 20.5186 19.652 20.3886L19.652 20.3886C19.6634 20.3482 19.6748 20.3078 19.685 20.2671L15.8986 18.3729C15.4924 18.8714 14.8994 19.2105 14.2105 19.2105C12.9953 19.2105 12 18.2152 12 17C12 15.7848 12.9953 14.7895 14.2105 14.7895C14.8994 14.7895 15.4924 15.1286 15.8986 15.6271L19.685 13.7329C19.6748 13.6922 19.6634 13.6518 19.652 13.6114L19.652 13.6114L19.652 13.6114L19.652 13.6114C19.6154 13.4814 19.5789 13.3517 19.5789 13.2105ZM23.0526 13.2105C23.0526 12.5073 22.4927 11.9474 21.7895 11.9474C21.0862 11.9474 20.5263 12.5073 20.5263 13.2105C20.5263 13.9138 21.0862 14.4737 21.7895 14.4737C22.4927 14.4737 23.0526 13.9138 23.0526 13.2105ZM14.2105 15.7368C14.9138 15.7368 15.4737 16.2968 15.4737 17C15.4737 17.7032 14.9138 18.2632 14.2105 18.2632C13.5073 18.2632 12.9474 17.7032 12.9474 17C12.9474 16.2968 13.5073 15.7368 14.2105 15.7368ZM23.0526 20.7895C23.0526 20.0862 22.4927 19.5263 21.7895 19.5263C21.0862 19.5263 20.5263 20.0862 20.5263 20.7895C20.5263 21.4927 21.0862 22.0526 21.7895 22.0526C22.4927 22.0526 23.0526 21.4927 23.0526 20.7895Z"
+                      fill="#222222"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="featured-listing">
+            <div class="tags">
+              <div class="tag" id="orange">
+                <p>New</p>
+              </div>
+              <div class="tag">
+                <p>Sale</p>
+              </div>
+              <img
+                src="images/pexels-pixabay-220453.svg"
+                alt="Listing owner"
+                class="featured-listing-owner"
+              />
+            </div>
+            <img
+              src="images/pexels-pixabay-276724.svg"
+              alt="An apartment"
+              class="featured-listing-image"
+            />
+            <div class="listing-details">
+              <div class="row">
+                <h2>Apartment#3</h2>
+                <div class="distance">
+                  <img src="images/location-pin.svg" alt="" />
+                  <p>1.1km away</p>
+                </div>
+              </div>
+              <p class="location">Bronx, NY 10459</p>
+              <div class="amenities">
+                <p>2</p>
+                <img src="images/bedroom.svg" alt="bedrooms" />
+                <img src="images/wifi.svg" alt="wifi" />
+                <p>1</p>
+                <img src="images/bathtub.svg" alt="bathrooms" />
+                <img src="images/air-conditioner.svg" alt="Air conditioning" />
+                <img src="images/bench.svg" alt="bench" />
+              </div>
+            </div>
+            <hr class="divider" />
+            <div class="listing-price">
+              <p class="price">$30,000</p>
+              <div class="interaction-container">
+                <button class="svg-icon" aria-label="Save this listing">
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_d_1_847)">
+                      <circle
+                        class="svg-bg"
+                        cx="18"
+                        cy="17"
+                        r="12"
+                        fill="#F4F4F4"
+                      />
+                    </g>
+                    <path
+                      class="svg-shape"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M21.3369 11C19.8546 11 18.5761 11.8849 17.9997 13.1536C17.4239 11.8849 16.1451 11 14.6635 11C12.643 11 11 12.6437 11 14.6637C11 15.0899 11.0732 15.4985 11.2078 15.8794C11.361 16.313 11.5932 16.709 11.8876 17.0506C12.0131 17.1967 12.1495 17.3325 12.2967 17.4571L17.8843 23.0074C17.9187 23.0418 17.9635 23.059 18.0087 23.059C18.0543 23.059 18.0994 23.0418 18.1341 23.0074L23.9292 17.2498C24.3043 16.8726 24.5989 16.4157 24.7833 15.9058C24.9234 15.5179 25 15.0995 25 14.6637C25 12.6437 23.3565 11 21.3369 11Z"
+                      stroke="#979797"
+                    />
+                  </svg>
+                </button>
+                <button class="svg-icon" aria-label="Share this listing">
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_d_1_850)">
+                      <circle
+                        class="svg-bg"
+                        cx="18"
+                        cy="17"
+                        r="12"
+                        fill="#F4F4F4"
+                      />
+                    </g>
+                    <path
+                      class="svg-shape"
+                      opacity="0.501674"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M19.5789 13.2105C19.5789 11.9953 20.5742 11 21.7895 11C23.0047 11 24 11.9953 24 13.2105C24 14.4258 23.0047 15.4211 21.7895 15.4211C21.1006 15.4211 20.5076 15.0819 20.1014 14.5835L16.315 16.4776C16.3252 16.5184 16.3366 16.5588 16.348 16.5991L16.348 16.5991L16.348 16.5991L16.348 16.5991C16.3846 16.7291 16.4211 16.8589 16.4211 17C16.4211 17.1411 16.3846 17.2709 16.348 17.4009L16.348 17.4009L16.348 17.4009L16.348 17.4009C16.3366 17.4412 16.3252 17.4816 16.315 17.5224L20.1014 19.4165C20.5076 18.9181 21.1006 18.5789 21.7895 18.5789C23.0047 18.5789 24 19.5742 24 20.7895C24 22.0047 23.0047 23 21.7895 23C20.5742 23 19.5789 22.0047 19.5789 20.7895C19.5789 20.6483 19.6154 20.5186 19.652 20.3886L19.652 20.3886C19.6634 20.3482 19.6748 20.3078 19.685 20.2671L15.8986 18.3729C15.4924 18.8714 14.8994 19.2105 14.2105 19.2105C12.9953 19.2105 12 18.2152 12 17C12 15.7848 12.9953 14.7895 14.2105 14.7895C14.8994 14.7895 15.4924 15.1286 15.8986 15.6271L19.685 13.7329C19.6748 13.6922 19.6634 13.6518 19.652 13.6114L19.652 13.6114L19.652 13.6114L19.652 13.6114C19.6154 13.4814 19.5789 13.3517 19.5789 13.2105ZM23.0526 13.2105C23.0526 12.5073 22.4927 11.9474 21.7895 11.9474C21.0862 11.9474 20.5263 12.5073 20.5263 13.2105C20.5263 13.9138 21.0862 14.4737 21.7895 14.4737C22.4927 14.4737 23.0526 13.9138 23.0526 13.2105ZM14.2105 15.7368C14.9138 15.7368 15.4737 16.2968 15.4737 17C15.4737 17.7032 14.9138 18.2632 14.2105 18.2632C13.5073 18.2632 12.9474 17.7032 12.9474 17C12.9474 16.2968 13.5073 15.7368 14.2105 15.7368ZM23.0526 20.7895C23.0526 20.0862 22.4927 19.5263 21.7895 19.5263C21.0862 19.5263 20.5263 20.0862 20.5263 20.7895C20.5263 21.4927 21.0862 22.0526 21.7895 22.0526C22.4927 22.0526 23.0526 21.4927 23.0526 20.7895Z"
+                      fill="#222222"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="select-listing">
+          <button
+            class="listing-select-btn active"
+            aria-label="Go to listing 1"
+          ></button>
+          <button
+            class="listing-select-btn"
+            aria-label="Go to listing 2"
+          ></button>
+          <button
+            class="listing-select-btn"
+            aria-label="Go to listing 3"
+          ></button>
+          <button
+            class="listing-select-btn"
+            aria-label="Go to listing 4"
+          ></button>
+          <button
+            class="listing-select-btn"
+            aria-label="Go to listing 5"
+          ></button>
+          <button
+            class="listing-select-btn"
+            aria-label="Go to listing 6"
+          ></button>
+          <button
+            class="listing-select-btn"
+            aria-label="Go to listing 7"
+          ></button>
+        </div>
+      </section>
+
+      <!-- Events -->
+      <section class="events-hero" aria-labelledby="events-heading">
+        <div class="events-header">
+          <h2 id="events-heading">Events</h2>
+        </div>
+        <div class="event-tabs">
+          <a class="event-tab active">All</a>
+          <a class="event-tab">Upcoming</a>
+          <a class="event-tab">Past</a>
+        </div>
+        <div class="carousel-container" aria-label="Events">
+          <button class="arrow" id="left" aria-label="Previous event">
+            <img src="images/arrow.svg" alt="" />
+          </button>
+          <div class="event-carousel" aria-live="polite">
+            <div class="event-card">
+              <div class="tags">
+                <div class="tag" id="orange">
+                  <p>Personal</p>
+                </div>
+              </div>
+              <div class="date-overlay">
+                <date>
+                  <p id="day">08</p>
+                  <p id="month">OCT</p>
+                </date>
+              </div>
+              <img
+                src="images/pexels-pixabay-207691.svg"
+                class="event-image"
+                alt="Event"
+              />
+              <div class="event-info">
+                <div class="row">
+                  <h2>Apartment#1</h2>
+                  <div class="event-interact">
+                    <button aria-label="Save this event">
+                      <img src="images/save-button.svg" alt="" />
+                    </button>
+                    <button class="svg-icon" aria-label="Share this event">
+                      <svg
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g filter="url(#filter0_d_1_850)">
+                          <circle
+                            class="svg-bg"
+                            cx="18"
+                            cy="17"
+                            r="12"
+                            fill="#F4F4F4"
+                          />
+                        </g>
+                        <path
+                          class="svg-shape"
+                          opacity="0.501674"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M19.5789 13.2105C19.5789 11.9953 20.5742 11 21.7895 11C23.0047 11 24 11.9953 24 13.2105C24 14.4258 23.0047 15.4211 21.7895 15.4211C21.1006 15.4211 20.5076 15.0819 20.1014 14.5835L16.315 16.4776C16.3252 16.5184 16.3366 16.5588 16.348 16.5991L16.348 16.5991L16.348 16.5991L16.348 16.5991C16.3846 16.7291 16.4211 16.8589 16.4211 17C16.4211 17.1411 16.3846 17.2709 16.348 17.4009L16.348 17.4009L16.348 17.4009L16.348 17.4009C16.3366 17.4412 16.3252 17.4816 16.315 17.5224L20.1014 19.4165C20.5076 18.9181 21.1006 18.5789 21.7895 18.5789C23.0047 18.5789 24 19.5742 24 20.7895C24 22.0047 23.0047 23 21.7895 23C20.5742 23 19.5789 22.0047 19.5789 20.7895C19.5789 20.6483 19.6154 20.5186 19.652 20.3886L19.652 20.3886C19.6634 20.3482 19.6748 20.3078 19.685 20.2671L15.8986 18.3729C15.4924 18.8714 14.8994 19.2105 14.2105 19.2105C12.9953 19.2105 12 18.2152 12 17C12 15.7848 12.9953 14.7895 14.2105 14.7895C14.8994 14.7895 15.4924 15.1286 15.8986 15.6271L19.685 13.7329C19.6748 13.6922 19.6634 13.6518 19.652 13.6114L19.652 13.6114L19.652 13.6114L19.652 13.6114C19.6154 13.4814 19.5789 13.3517 19.5789 13.2105ZM23.0526 13.2105C23.0526 12.5073 22.4927 11.9474 21.7895 11.9474C21.0862 11.9474 20.5263 12.5073 20.5263 13.2105C20.5263 13.9138 21.0862 14.4737 21.7895 14.4737C22.4927 14.4737 23.0526 13.9138 23.0526 13.2105ZM14.2105 15.7368C14.9138 15.7368 15.4737 16.2968 15.4737 17C15.4737 17.7032 14.9138 18.2632 14.2105 18.2632C13.5073 18.2632 12.9474 17.7032 12.9474 17C12.9474 16.2968 13.5073 15.7368 14.2105 15.7368ZM23.0526 20.7895C23.0526 20.0862 22.4927 19.5263 21.7895 19.5263C21.0862 19.5263 20.5263 20.0862 20.5263 20.7895C20.5263 21.4927 21.0862 22.0526 21.7895 22.0526C22.4927 22.0526 23.0526 21.4927 23.0526 20.7895Z"
+                          fill="#222222"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p class="time-place">7:30 - 10:30PM @someplace</p>
+                <div class="people-count">
+                  <img src="images/people.svg" class="people-icon" alt="" />
+                  <p class="num-people">182</p>
+                </div>
+              </div>
+            </div>
+            <div class="event-card">
+              <div class="tags">
+                <div class="tag" id="orange">
+                  <p>Personal</p>
+                </div>
+              </div>
+              <div class="date-overlay">
+                <date>
+                  <p id="day">08</p>
+                  <p id="month">OCT</p>
+                </date>
+              </div>
+              <img
+                src="images/pexels-rodnae-productions-7551751.svg"
+                class="event-image"
+                alt="Event"
+              />
+              <div class="event-info">
+                <div class="row">
+                  <h2>Apartment#2</h2>
+                  <div class="event-interact">
+                    <button aria-label="Save this event">
+                      <img src="images/save-button.svg" alt="" />
+                    </button>
+                    <button class="svg-icon" aria-label="Share this event">
+                      <svg
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g filter="url(#filter0_d_1_850)">
+                          <circle
+                            class="svg-bg"
+                            cx="18"
+                            cy="17"
+                            r="12"
+                            fill="#F4F4F4"
+                          />
+                        </g>
+                        <path
+                          class="svg-shape"
+                          opacity="0.501674"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M19.5789 13.2105C19.5789 11.9953 20.5742 11 21.7895 11C23.0047 11 24 11.9953 24 13.2105C24 14.4258 23.0047 15.4211 21.7895 15.4211C21.1006 15.4211 20.5076 15.0819 20.1014 14.5835L16.315 16.4776C16.3252 16.5184 16.3366 16.5588 16.348 16.5991L16.348 16.5991L16.348 16.5991L16.348 16.5991C16.3846 16.7291 16.4211 16.8589 16.4211 17C16.4211 17.1411 16.3846 17.2709 16.348 17.4009L16.348 17.4009L16.348 17.4009L16.348 17.4009C16.3366 17.4412 16.3252 17.4816 16.315 17.5224L20.1014 19.4165C20.5076 18.9181 21.1006 18.5789 21.7895 18.5789C23.0047 18.5789 24 19.5742 24 20.7895C24 22.0047 23.0047 23 21.7895 23C20.5742 23 19.5789 22.0047 19.5789 20.7895C19.5789 20.6483 19.6154 20.5186 19.652 20.3886L19.652 20.3886C19.6634 20.3482 19.6748 20.3078 19.685 20.2671L15.8986 18.3729C15.4924 18.8714 14.8994 19.2105 14.2105 19.2105C12.9953 19.2105 12 18.2152 12 17C12 15.7848 12.9953 14.7895 14.2105 14.7895C14.8994 14.7895 15.4924 15.1286 15.8986 15.6271L19.685 13.7329C19.6748 13.6922 19.6634 13.6518 19.652 13.6114L19.652 13.6114L19.652 13.6114L19.652 13.6114C19.6154 13.4814 19.5789 13.3517 19.5789 13.2105ZM23.0526 13.2105C23.0526 12.5073 22.4927 11.9474 21.7895 11.9474C21.0862 11.9474 20.5263 12.5073 20.5263 13.2105C20.5263 13.9138 21.0862 14.4737 21.7895 14.4737C22.4927 14.4737 23.0526 13.9138 23.0526 13.2105ZM14.2105 15.7368C14.9138 15.7368 15.4737 16.2968 15.4737 17C15.4737 17.7032 14.9138 18.2632 14.2105 18.2632C13.5073 18.2632 12.9474 17.7032 12.9474 17C12.9474 16.2968 13.5073 15.7368 14.2105 15.7368ZM23.0526 20.7895C23.0526 20.0862 22.4927 19.5263 21.7895 19.5263C21.0862 19.5263 20.5263 20.0862 20.5263 20.7895C20.5263 21.4927 21.0862 22.0526 21.7895 22.0526C22.4927 22.0526 23.0526 21.4927 23.0526 20.7895Z"
+                          fill="#222222"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p class="time-place">7:30 - 10:30PM @someplace</p>
+                <div class="people-count">
+                  <img src="images/people.svg" class="people-icon" alt="" />
+                  <p class="num-people">182</p>
+                </div>
+              </div>
+            </div>
+            <div class="event-card">
+              <div class="tags">
+                <div class="tag">
+                  <p>Webinar</p>
+                </div>
+              </div>
+              <div class="date-overlay">
+                <date>
+                  <p id="day">08</p>
+                  <p id="month">OCT</p>
+                </date>
+              </div>
+              <img
+                src="images/pexels-rodnae-productions-6518880.svg"
+                class="event-image"
+                alt="Event"
+              />
+              <div class="event-info">
+                <div class="row">
+                  <h2>Apartment#3</h2>
+                  <div class="event-interact">
+                    <button aria-label="Save this event">
+                      <img src="images/save-button.svg" alt="" />
+                    </button>
+                    <button class="svg-icon" aria-label="Share this event">
+                      <svg
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g filter="url(#filter0_d_1_850)">
+                          <circle
+                            class="svg-bg"
+                            cx="18"
+                            cy="17"
+                            r="12"
+                            fill="#F4F4F4"
+                          />
+                        </g>
+                        <path
+                          class="svg-shape"
+                          opacity="0.501674"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M19.5789 13.2105C19.5789 11.9953 20.5742 11 21.7895 11C23.0047 11 24 11.9953 24 13.2105C24 14.4258 23.0047 15.4211 21.7895 15.4211C21.1006 15.4211 20.5076 15.0819 20.1014 14.5835L16.315 16.4776C16.3252 16.5184 16.3366 16.5588 16.348 16.5991L16.348 16.5991L16.348 16.5991L16.348 16.5991C16.3846 16.7291 16.4211 16.8589 16.4211 17C16.4211 17.1411 16.3846 17.2709 16.348 17.4009L16.348 17.4009L16.348 17.4009L16.348 17.4009C16.3366 17.4412 16.3252 17.4816 16.315 17.5224L20.1014 19.4165C20.5076 18.9181 21.1006 18.5789 21.7895 18.5789C23.0047 18.5789 24 19.5742 24 20.7895C24 22.0047 23.0047 23 21.7895 23C20.5742 23 19.5789 22.0047 19.5789 20.7895C19.5789 20.6483 19.6154 20.5186 19.652 20.3886L19.652 20.3886C19.6634 20.3482 19.6748 20.3078 19.685 20.2671L15.8986 18.3729C15.4924 18.8714 14.8994 19.2105 14.2105 19.2105C12.9953 19.2105 12 18.2152 12 17C12 15.7848 12.9953 14.7895 14.2105 14.7895C14.8994 14.7895 15.4924 15.1286 15.8986 15.6271L19.685 13.7329C19.6748 13.6922 19.6634 13.6518 19.652 13.6114L19.652 13.6114L19.652 13.6114L19.652 13.6114C19.6154 13.4814 19.5789 13.3517 19.5789 13.2105ZM23.0526 13.2105C23.0526 12.5073 22.4927 11.9474 21.7895 11.9474C21.0862 11.9474 20.5263 12.5073 20.5263 13.2105C20.5263 13.9138 21.0862 14.4737 21.7895 14.4737C22.4927 14.4737 23.0526 13.9138 23.0526 13.2105ZM14.2105 15.7368C14.9138 15.7368 15.4737 16.2968 15.4737 17C15.4737 17.7032 14.9138 18.2632 14.2105 18.2632C13.5073 18.2632 12.9474 17.7032 12.9474 17C12.9474 16.2968 13.5073 15.7368 14.2105 15.7368ZM23.0526 20.7895C23.0526 20.0862 22.4927 19.5263 21.7895 19.5263C21.0862 19.5263 20.5263 20.0862 20.5263 20.7895C20.5263 21.4927 21.0862 22.0526 21.7895 22.0526C22.4927 22.0526 23.0526 21.4927 23.0526 20.7895Z"
+                          fill="#222222"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p class="time-place">7:30 - 10:30PM @someplace</p>
+                <div class="people-count">
+                  <img src="images/people.svg" class="people-icon" alt="" />
+                  <p class="num-people">182</p>
+                </div>
+              </div>
+            </div>
+            <div class="event-card">
+              <div class="tags">
+                <div class="tag">
+                  <p>Webinar</p>
+                </div>
+              </div>
+              <div class="date-overlay">
+                <date>
+                  <p id="day">08</p>
+                  <p id="month">OCT</p>
+                </date>
+              </div>
+              <img
+                src="images/pexels-rodnae-productions-7648050.svg"
+                class="event-image"
+                alt="Event"
+              />
+              <div class="event-info">
+                <div class="row">
+                  <h2>Apartment#4</h2>
+                  <div class="event-interact">
+                    <button aria-label="Save this event">
+                      <img src="images/save-button.svg" alt="" />
+                    </button>
+                    <button class="svg-icon" aria-label="Share this event">
+                      <svg
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g filter="url(#filter0_d_1_850)">
+                          <circle
+                            class="svg-bg"
+                            cx="18"
+                            cy="17"
+                            r="12"
+                            fill="#F4F4F4"
+                          />
+                        </g>
+                        <path
+                          class="svg-shape"
+                          opacity="0.501674"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M19.5789 13.2105C19.5789 11.9953 20.5742 11 21.7895 11C23.0047 11 24 11.9953 24 13.2105C24 14.4258 23.0047 15.4211 21.7895 15.4211C21.1006 15.4211 20.5076 15.0819 20.1014 14.5835L16.315 16.4776C16.3252 16.5184 16.3366 16.5588 16.348 16.5991L16.348 16.5991L16.348 16.5991L16.348 16.5991C16.3846 16.7291 16.4211 16.8589 16.4211 17C16.4211 17.1411 16.3846 17.2709 16.348 17.4009L16.348 17.4009L16.348 17.4009L16.348 17.4009C16.3366 17.4412 16.3252 17.4816 16.315 17.5224L20.1014 19.4165C20.5076 18.9181 21.1006 18.5789 21.7895 18.5789C23.0047 18.5789 24 19.5742 24 20.7895C24 22.0047 23.0047 23 21.7895 23C20.5742 23 19.5789 22.0047 19.5789 20.7895C19.5789 20.6483 19.6154 20.5186 19.652 20.3886L19.652 20.3886C19.6634 20.3482 19.6748 20.3078 19.685 20.2671L15.8986 18.3729C15.4924 18.8714 14.8994 19.2105 14.2105 19.2105C12.9953 19.2105 12 18.2152 12 17C12 15.7848 12.9953 14.7895 14.2105 14.7895C14.8994 14.7895 15.4924 15.1286 15.8986 15.6271L19.685 13.7329C19.6748 13.6922 19.6634 13.6518 19.652 13.6114L19.652 13.6114L19.652 13.6114L19.652 13.6114C19.6154 13.4814 19.5789 13.3517 19.5789 13.2105ZM23.0526 13.2105C23.0526 12.5073 22.4927 11.9474 21.7895 11.9474C21.0862 11.9474 20.5263 12.5073 20.5263 13.2105C20.5263 13.9138 21.0862 14.4737 21.7895 14.4737C22.4927 14.4737 23.0526 13.9138 23.0526 13.2105ZM14.2105 15.7368C14.9138 15.7368 15.4737 16.2968 15.4737 17C15.4737 17.7032 14.9138 18.2632 14.2105 18.2632C13.5073 18.2632 12.9474 17.7032 12.9474 17C12.9474 16.2968 13.5073 15.7368 14.2105 15.7368ZM23.0526 20.7895C23.0526 20.0862 22.4927 19.5263 21.7895 19.5263C21.0862 19.5263 20.5263 20.0862 20.5263 20.7895C20.5263 21.4927 21.0862 22.0526 21.7895 22.0526C22.4927 22.0526 23.0526 21.4927 23.0526 20.7895Z"
+                          fill="#222222"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p class="time-place">7:30 - 10:30PM @someplace</p>
+                <div class="people-count">
+                  <img src="images/people.svg" class="people-icon" alt="" />
+                  <p class="num-people">182</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="arrow" id="right" aria-label="Next event">
+            <img src="images/arrow.svg" alt="" />
+          </button>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-hero" aria-labelledby="about-heading">
+        <div class="about-container">
+          <div class="about">
+            <div class="reverifi">
+              <h2 id="about-heading">reverifi</h2>
+              <h2 id="plus">+</h2>
+            </div>
+            <p>
+              Search our network and find your supporting team to complete the
+              process
+            </p>
+            <a class="see-more-btn">See More</a>
+          </div>
+          <div class="services">
+            <div class="service">
+              <img src="images/attorney.svg" alt="" />
+              <p>Attorney</p>
+            </div>
+            <div class="service">
+              <img src="images/camera.svg" alt="" />
+              <p>Photographer</p>
+            </div>
+            <div class="service">
+              <img src="images/agent.svg" alt="" />
+              <p>Agent</p>
+            </div>
+            <div class="service">
+              <img src="images/clean.svg" alt="" />
+              <p>Cleaning Services</p>
+            </div>
+            <div class="service">
+              <img src="images/inspection.svg" alt="" />
+              <p>Home Inspectors</p>
+            </div>
+            <div class="service">
+              <img src="images/insurance.svg" alt="" />
+              <p>Insurance Provider</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Explore -->
+
+      <section class="explore-hero" aria-labelledby="explore-heading">
+        <h2 class="explore-header" id="explore-heading">
+          Explore our Listings
+        </h2>
+        <div class="explore">
+          <img src="images/new-york.svg" alt="New York" />
+          <div class="city-info" id="first-city">
+            <h2>New York</h2>
+            <div class="listing-number">
+              <p class="number">2</p>
+              <p>Listings</p>
+            </div>
+          </div>
+          <div class="select-listing" id="explore-select">
+            <button
+              class="listing-select-btn active"
+              aria-label="Go to city 1"
+            ></button>
+            <button
+              class="listing-select-btn"
+              aria-label="Go to city 2"
+            ></button>
+            <button
+              class="listing-select-btn"
+              aria-label="Go to city 3"
+            ></button>
+            <button
+              class="listing-select-btn"
+              aria-label="Go to city 4"
+            ></button>
+            <button
+              class="listing-select-btn"
+              aria-label="Go to city 5"
+            ></button>
+            <button
+              class="listing-select-btn"
+              aria-label="Go to city 6"
+            ></button>
+            <button
+              class="listing-select-btn"
+              aria-label="Go to city 7"
+            ></button>
+          </div>
+          <div class="desktop-explore">
+            <div class="desktop-city" id="first-row">
+              <img
+                src="images/170606120957-california---travel-destination---shutterstock-220315747.svg"
+                alt="California"
+              />
+              <div class="city-info">
+                <h2>California</h2>
+                <div class="listing-number">
+                  <p class="number">43</p>
+                  <p>Listings</p>
+                </div>
+              </div>
+            </div>
+            <div class="desktop-city" id="first-row">
+              <img src="images/shutterstockRF_520475221.svg" alt="Florida" />
+              <div class="city-info">
+                <h2>Florida</h2>
+                <div class="listing-number">
+                  <p class="number">23</p>
+                  <p>Listings</p>
+                </div>
+              </div>
+            </div>
+            <div class="desktop-city" id="first-row">
+              <img src="images/download.svg" alt="Hawaii" />
+              <div class="city-info">
+                <h2>Hawaii</h2>
+                <div class="listing-number">
+                  <p class="number">53</p>
+                  <p>Listings</p>
+                </div>
+              </div>
+            </div>
+            <div class="desktop-city">
+              <img
+                src="images/1200px-Anchorage_on_an_April_evening.svg"
+                alt="Alaska"
+              />
+              <div class="city-info">
+                <h2>Alaska</h2>
+                <div class="listing-number">
+                  <p class="number">5</p>
+                  <p>Listings</p>
+                </div>
+              </div>
+            </div>
+            <div class="desktop-city">
+              <img src="images/download (1).svg" alt="New Jersey" />
+              <div class="city-info">
+                <h2>New Jersey</h2>
+                <div class="listing-number">
+                  <p class="number">89</p>
+                  <p>Listings</p>
+                </div>
+              </div>
+            </div>
+            <div class="desktop-city">
+              <img src="images/download (2).svg" alt="Georgia" />
+              <div class="city-info">
+                <h2>Georgia</h2>
+                <div class="listing-number">
+                  <p class="number">17</p>
+                  <p>Listings</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Map -->
+      <section class="map-hero" aria-labelledby="map-heading">
+        <div class="waypoint-container">
+          <img src="images/waypoint.svg" alt="" class="waypoint" />
+        </div>
+        <div class="search-area">
+          <h2 class="map-heading">Claim your Address</h2>
+          <div class="search-bar-container">
+            <label for="address-input" class="visually-hidden"
+              >Enter your address</label
+            >
+            <img
+              src="images/location-pin.svg"
+              alt=""
+              class="location-icon"
+              aria-hidden="true"
+            />
+            <input
+              type="text"
+              id="address-input"
+              placeholder="Enter your address"
+              class="search-input"
+            />
+            <button class="search-button" aria-label="Claim address">
+              <img src="images/search-icon.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="journey-hero">
+        <div class="journey-container">
+          <div class="start-journey">
+            <p>Start your real estate journey with</p>
+            <img
+              src="images/download-logo-reverifi-white.svg"
+              alt="reverifi logo"
+            />
+          </div>
+          <a class="register-btn">Join us</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="socials">
+        <a aria-label="Facebook"
+          ><img src="images/facebook.svg" alt="facebook"
+        /></a>
+        <a aria-label="Instagram"
+          ><img src="images/instagram.svg" alt="instagram"
+        /></a>
+        <a aria-label="YouTube"
+          ><img src="images/youtube.svg" alt="youtube"
+        /></a>
+        <a aria-label="LinkedIn"
+          ><img src="images/linkedin.svg" alt="linkedin"
+        /></a>
+      </div>
+      <div class="info-section">
+        <div class="contact">
+          <img
+            src="images/download-logo-reverifi-green.svg"
+            alt="reverifi logo"
+          />
+          <div class="contact-info">
+            <img src="images/location.svg" alt="" />
+            <a href="tel:712-427-1242">712-427-1242</a>
+          </div>
+          <div class="contact-info">
+            <img src="images/mail.svg" alt="" />
+            <a href="mailto:support@example.com">support@example.com</a>
+          </div>
+          <div class="contact-info">
+            <img src="images/phone-call.svg" alt="" />
+            <a href="tel:319-764-9876">319-764-9876</a>
+          </div>
+        </div>
+        <div class="helpful">
+          <h2>Helpful Links</h2>
+          <ul>
+            <li><a>Sign in</a></li>
+            <li><a>Support</a></li>
+            <li><a>FAQ's</a></li>
+          </ul>
+        </div>
+        <div class="company">
+          <h2>Company</h2>
+          <ul>
+            <li><a>About Us</a></li>
+            <li><a>Privacy</a></li>
+            <li><a>Terms of use</a></li>
+            <li><a>Accessibility</a></li>
+          </ul>
+        </div>
+        <div class="newsletter">
+          <h2>Subscribe to our Newsletter</h2>
+          <div class="subscribe">
+            <p>Subscribe to our Newsletter</p>
+            <a class="register-btn" id="subscribe">Subscribe</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2021 Reverifi. All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>

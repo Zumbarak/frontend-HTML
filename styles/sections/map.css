@@ -1,0 +1,87 @@
+.map-hero {
+  background-color: var(--section-grey);
+  background-image: url("../../images/map.svg");
+  height: 34.3125rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.map-heading {
+  font-weight: 600;
+  font-size: 1.375rem;
+  margin-bottom: 0.625rem;
+}
+
+.map-hero .search-bar-container {
+  width: 60%;
+  min-width: 21.4375rem;
+  max-width: 25.0625rem;
+  background-color: white;
+  height: 3.4375rem;
+}
+
+.map-hero .search-button {
+  width: 2.5625rem;
+  height: 2.5625rem;
+
+  padding: 0.4375rem;
+  margin-bottom: 0.4375rem;
+}
+
+.map-hero .search-bar-container input {
+  font-size: 0.75rem;
+}
+
+.search-area {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 12.5rem;
+}
+
+.waypoint {
+  margin-top: 5rem;
+  width: 3.125rem;
+}
+
+.waypoint-container {
+  height: 100%;
+}
+
+@media (min-width: 53.125rem) {
+  .map-heading {
+    font-size: 2rem;
+    padding-bottom: 1.25rem;
+  }
+  .map-hero {
+    flex-direction: row;
+    background-position: bottom;
+    justify-content: center;
+    height: 16.5625rem;
+    overflow: hidden;
+  }
+  .waypoint {
+    margin: 0;
+  }
+  .waypoint-container {
+    height: 3.75rem;
+  }
+  .search-area {
+    margin: 250px;
+    justify-content: first baseline;
+  }
+  .map-hero .search-bar-container input {
+    font-size: 1rem;
+  }
+  .map-hero .search-bar-container {
+    height: 3.75rem;
+  }
+}

@@ -1,0 +1,136 @@
+.explore-hero {
+  background-color: var(--section-grey);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 1.875rem;
+}
+
+.explore {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.desktop-explore {
+  display: none;
+}
+
+.explore img {
+  height: 33.25rem;
+  width: 100%;
+  max-width: 31.25rem;
+  display: block;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.desktop-city {
+  margin: 20px;
+  margin-left: 30px;
+  margin-top: 0;
+}
+
+.desktop-city img {
+  width: 16.125rem;
+  height: 15.625rem;
+}
+.explore-header {
+  color: var(--text-grey);
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.city-info {
+  width: 100%;
+  max-width: 31.25rem;
+  position: absolute;
+  text-align: left;
+  padding-left: 20px;
+  justify-content: left;
+  text-align: left;
+  z-index: 10;
+  bottom: 2.5rem;
+  margin-left: 0.625rem;
+}
+
+.city-info h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.listing-number {
+  display: flex;
+  align-items: center;
+}
+
+.listing-number p {
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.listing-number .number {
+  padding: 0.3125rem;
+  color: var(--theme-color);
+  font-weight: 700;
+}
+
+#explore-select {
+  position: absolute;
+  bottom: 1rem;
+}
+
+#explore-select .listing-select-btn {
+  background-color: white;
+}
+
+#explore-select .listing-select-btn.active {
+  background: none;
+}
+
+.desktop-city .city-info {
+  padding-left: 0.3125rem;
+}
+
+.desktop-city#first-row {
+  margin-bottom: 2rem;
+}
+
+.desktop-city#first-row .city-info {
+  padding-bottom: 17.375rem;
+}
+
+@media (min-width: 31.25rem) {
+  .explore img {
+    border-radius: 1.25rem;
+  }
+}
+
+@media (min-width: 89rem) {
+  .desktop-explore {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .city-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .city-info#first-city {
+    margin-left: 0rem;
+    padding-left: 0;
+    margin-right: 53.75rem;
+  }
+
+  #explore {
+    display: none;
+  }
+
+  #explore-select {
+    display: none;
+  }
+}
